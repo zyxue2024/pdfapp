@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "pdfapp"
+version = "0.1.0"
+description = ""
+authors = ["zyxue <zhuyi.xue@alum.utoronto.ca>"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pypdf2 = "^3.0.1"
+streamlit = "^1.33.0"
+
+[tool.poetry.group.dev.dependencies]
+black = {version = "^24.4.0"}
+mypy = "^1.9.0"
+pylint = "^3.1.0"
+ruff = "^0.3.7"
+pytest = "^5.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
