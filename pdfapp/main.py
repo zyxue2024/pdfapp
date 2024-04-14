@@ -13,7 +13,7 @@ st.set_page_config(
 )
 
 st.header("Concatenating pdf files")
-st.write("Just a simple utility tool for concatenating pdf files.")
+st.write(":blue[Just a simple utility tool for concatenating pdf files.]")
 
 
 def concatenate_pdfs(pdf_files: List[UploadedFile]) -> bytes:
