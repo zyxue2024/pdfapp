@@ -12,7 +12,7 @@ st.set_page_config(
     page_icon="👋",
 )
 
-st.header("Concatenate pdf files")
+st.header("Just a simple utility tool for concatenating pdf files.")
 
 
 def concatenate_pdfs(pdf_files: List[UploadedFile]) -> bytes:
@@ -35,7 +35,8 @@ def concatenate_pdfs(pdf_files: List[UploadedFile]) -> bytes:
 uploaded_files = st.file_uploader(
     label=(
         "Upload your pdf files to concatenate here. "
-        "Note the uploaded files will be concatenated in alphabetical orders."
+        "Note the uploaded files will be concatenated in alphabetical orders. "
+        "You can prefix file name with numbers like if you'd like them to be concatenated in a particular order."
     ),
     type="pdf",
     accept_multiple_files=True,
